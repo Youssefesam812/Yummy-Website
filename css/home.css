@@ -1,0 +1,246 @@
+body {
+    overflow: hidden;
+}
+
+#loadingScreen {
+    z-index: 99999;
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+#sideNav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: white;
+    overflow: hidden;
+    z-index: 99;
+    transition: 0.7s;
+    width: 23%;
+    transition: 0.5s;
+}
+
+.navHead {
+
+    position: relative;
+    width: 22%;
+}
+
+.navContent {
+    width: 78%;
+    position: relative;
+
+}
+
+
+@media (max-width: 800px) {
+    #sideNav {
+        width: 60%;
+
+    }
+
+    .navHead {
+        width: 25%;
+    }
+
+    .navContent {
+        width: 75%;
+    }
+
+    #alertPassword {
+        height: 120px !important;
+    }
+
+}
+
+
+
+.menuIcon {
+    cursor: pointer;
+}
+
+.ulsidenav li {
+    margin-bottom: 18px;
+    cursor: pointer;
+
+    position: relative;
+    top: 250px;
+
+}
+
+.navLinks {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+i {
+    cursor: pointer;
+}
+
+body,
+.search input {
+
+    background-color: #0D0D0D;
+}
+
+.search input::placeholder {
+    color: #6C756B;
+}
+
+.input1,
+.input2 {
+    width: 43%;
+}
+
+#SearchByName,
+#SearchByFirstLetter {
+    color: white !important;
+}
+
+.search input:focus {
+    background-color: #0D0D0D;
+}
+
+.eachmeal img {
+    cursor: pointer;
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.nameDiv {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.74);
+    transition: 0.5s;
+
+    color: black;
+    font-size: 27px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eachmeal:hover .nameDiv {
+    top: 0%;
+}
+
+.eachCateg:hover .categDiv {
+    top: 0%;
+}
+
+.eachCateg img {
+    cursor: pointer;
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.categDiv {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.74);
+    transition: 0.5s;
+
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.categDiv p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.areas {
+    cursor: pointer;
+}
+
+.ingredient p {
+    text-align: center;
+}
+
+.ingredient {
+    cursor: pointer;
+}
+
+.contact {
+    height: 100vh;
+}
+
+.inputs {
+    width: 38%;
+}
+
+.alerts {
+    height: 60px;
+}
+
+.detailimage img {
+    height: 360px;
+}
+
+.listingred li {
+    background-color: #CFF4FC;
+    color: #055160;
+    width: fit-content;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.listingred {
+    position: relative;
+}
+
+.tagP {
+    background-color: #F8D7DA;
+    color: #842029;
+    width: fit-content;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.detailimg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.detailimg img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
